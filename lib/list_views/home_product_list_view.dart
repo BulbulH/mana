@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterecom/WidgetHelper/CustomIcons.dart';
 import 'package:flutterecom/models/request/createOrderModel.dart';
 import 'package:flutterecom/models/responce/getAllProductsResponceModel.dart';
+import 'package:flutterecom/screens/homefragments/productsWidget.dart';
 import 'package:flutterecom/screens/splashWidget.dart';
 import 'package:flutterecom/utils/appTheme.dart';
 import 'package:flutterecom/utils/consts.dart';
@@ -212,13 +213,13 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                  onTap: () {
                    if(item.quantity==1){
                      delCartProductsPref(item.product_id).then((isdeleted){
-                       setState(() {});
+                       ProductScreenState.setState(() {});
                      });
                    }else{
                      if(item.quantity>1)
                        item.quantity-=1;
                      addORupdateCartProductsPref(item).then((isUpdated){
-                       setState(() {});
+                       ProductScreenState.setState(() {});
                      });}
                  },
                  child: Container(
@@ -259,7 +260,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                    if(item.quantity<30)
                      item.quantity+=1;
                    addORupdateCartProductsPref(item).then((isUpdated){
-                     setState(() {});
+                     ProductScreenState.setState(() {});
                    });
                  },
                  child: Container(
@@ -292,7 +293,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                       delCartProductsPref(data.id);
                     else
                       addORupdateCartProductsPref(Line_items(data.id, -1, 1));
-                    setState(() {});
+                    ProductScreenState.setState(() {});
                 },
                 child: Container(
                     decoration: BoxDecoration(
