@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1053773990970-8ti6jus31hobtj62jtf5eddgpf1mgd59.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1053773990970-8ti6jus31hobtj62jtf5eddgpf1mgd59</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1053773990970-f197ipof91k6vp6pmbujjg1a5ibucp7q.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB_gbQ4iIrRQ-Cd47Hsv_e7cW0mtUmScP4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1053773990970</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.envato.wcfm</string>
+	<key>PROJECT_ID</key>
+	<string>wooflux-wcfm</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wooflux-wcfm.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1053773990970:ios:7f3e6428175d5306377903</string>
+	<key>DATABASE_URL</key>
+	<string>https://wooflux-wcfm.firebaseio.com</string>
+</dict>
+</plist>

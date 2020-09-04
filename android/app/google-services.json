@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "126822296180",
+    "firebase_url": "https://hatbazar-project.firebaseio.com",
+    "project_id": "hatbazar-project",
+    "storage_bucket": "hatbazar-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126822296180:android:5a1545f83804f7ffdcff21",
+        "android_client_info": {
+          "package_name": "com.hatbazar.net"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126822296180-4paphc6ug5gk5vr0rai2tb17uff5ghbt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hatbazar.net",
+            "certificate_hash": "1d27881d44d2c667d6138a3c44bb1dbe8213cf81"
+          }
+        },
+        {
+          "client_id": "126822296180-da163hv2l13crko3qc2g5b1741q2gq9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA93qw7D3DU7vyr7hyDZkwGlEPNX5a9c_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126822296180-da163hv2l13crko3qc2g5b1741q2gq9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

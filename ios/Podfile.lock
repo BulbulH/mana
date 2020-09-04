@@ -1,0 +1,167 @@
+PODS:
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - FBSDKCoreKit (5.15.1):
+    - FBSDKCoreKit/Basics (= 5.15.1)
+    - FBSDKCoreKit/Core (= 5.15.1)
+  - FBSDKCoreKit/Basics (5.15.1)
+  - FBSDKCoreKit/Core (5.15.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.15.1):
+    - FBSDKLoginKit/Login (= 5.15.1)
+  - FBSDKLoginKit/Login (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
+  - Flutter (1.0.0)
+  - flutter_facebook_login (0.0.1):
+    - FBSDKCoreKit (~> 5.5)
+    - FBSDKLoginKit (~> 5.5)
+    - Flutter
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - google_sign_in (0.0.1):
+    - Flutter
+    - GoogleSignIn (~> 5.0)
+  - google_sign_in_web (0.8.1):
+    - Flutter
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+  - intro_slider (0.0.1):
+    - Flutter
+  - path_provider (0.0.1):
+    - Flutter
+  - path_provider_linux (0.0.1):
+    - Flutter
+  - path_provider_macos (0.0.1):
+    - Flutter
+  - rate_my_app (0.1):
+    - Flutter
+  - razorpay-pod (1.1.5)
+  - razorpay_flutter (1.1.4):
+    - Flutter
+    - razorpay-pod
+  - share (0.0.1):
+    - Flutter
+  - shared_preferences (0.0.1):
+    - Flutter
+  - shared_preferences_macos (0.0.1):
+    - Flutter
+  - shared_preferences_web (0.0.1):
+    - Flutter
+  - sign_in_with_apple (0.0.1):
+    - Flutter
+  - sqflite (0.0.1):
+    - Flutter
+    - FMDB (~> 2.7.2)
+  - webview_flutter (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_facebook_login (from `.symlinks/plugins/flutter_facebook_login/ios`)
+  - google_sign_in (from `.symlinks/plugins/google_sign_in/ios`)
+  - google_sign_in_web (from `.symlinks/plugins/google_sign_in_web/ios`)
+  - intro_slider (from `.symlinks/plugins/intro_slider/ios`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - path_provider_linux (from `.symlinks/plugins/path_provider_linux/ios`)
+  - path_provider_macos (from `.symlinks/plugins/path_provider_macos/ios`)
+  - rate_my_app (from `.symlinks/plugins/rate_my_app/ios`)
+  - razorpay_flutter (from `.symlinks/plugins/razorpay_flutter/ios`)
+  - share (from `.symlinks/plugins/share/ios`)
+  - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - shared_preferences_macos (from `.symlinks/plugins/shared_preferences_macos/ios`)
+  - shared_preferences_web (from `.symlinks/plugins/shared_preferences_web/ios`)
+  - sign_in_with_apple (from `.symlinks/plugins/sign_in_with_apple/ios`)
+  - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FMDB
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - razorpay-pod
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_facebook_login:
+    :path: ".symlinks/plugins/flutter_facebook_login/ios"
+  google_sign_in:
+    :path: ".symlinks/plugins/google_sign_in/ios"
+  google_sign_in_web:
+    :path: ".symlinks/plugins/google_sign_in_web/ios"
+  intro_slider:
+    :path: ".symlinks/plugins/intro_slider/ios"
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
+  path_provider_linux:
+    :path: ".symlinks/plugins/path_provider_linux/ios"
+  path_provider_macos:
+    :path: ".symlinks/plugins/path_provider_macos/ios"
+  rate_my_app:
+    :path: ".symlinks/plugins/rate_my_app/ios"
+  razorpay_flutter:
+    :path: ".symlinks/plugins/razorpay_flutter/ios"
+  share:
+    :path: ".symlinks/plugins/share/ios"
+  shared_preferences:
+    :path: ".symlinks/plugins/shared_preferences/ios"
+  shared_preferences_macos:
+    :path: ".symlinks/plugins/shared_preferences_macos/ios"
+  shared_preferences_web:
+    :path: ".symlinks/plugins/shared_preferences_web/ios"
+  sign_in_with_apple:
+    :path: ".symlinks/plugins/sign_in_with_apple/ios"
+  sqflite:
+    :path: ".symlinks/plugins/sqflite/ios"
+  webview_flutter:
+    :path: ".symlinks/plugins/webview_flutter/ios"
+
+SPEC CHECKSUMS:
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
+  FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_facebook_login: cfb5659f686b1c575ef205c6b6fd20db9679d3c4
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  google_sign_in: 6bd214b9c154f881422f5fe27b66aaa7bbd580cc
+  google_sign_in_web: 52deb24929ac0992baff65c57956031c44ed44c3
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  intro_slider: 85847639533bfd8e898d76844e0aa2cf412ee190
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+  path_provider_linux: 4d630dc393e1f20364f3e3b4a2ff41d9674a84e4
+  path_provider_macos: f760a3c5b04357c380e2fddb6f9db6f3015897e0
+  rate_my_app: 45513a2f4d9a55b7b46d19b64fc13882fd101157
+  razorpay-pod: 31dd24ddb70275d82be12527b45001f9bc9f1be2
+  razorpay_flutter: 4587d9b2970328d06dffa09cf72d79c5eac9b77f
+  share: 0b2c3e82132f5888bccca3351c504d0003b3b410
+  shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
+  shared_preferences_macos: f3f29b71ccbb56bf40c9dd6396c9acf15e214087
+  shared_preferences_web: 141cce0c3ed1a1c5bf2a0e44f52d31eeb66e5ea9
+  sign_in_with_apple: 34f3f5456a45fd7ac5fb42905e2ad31dae061b4a
+  sqflite: 4001a31ff81d210346b500c55b17f4d6c7589dd0
+  webview_flutter: d2b4d6c66968ad042ad94cbb791f5b72b4678a96
+
+PODFILE CHECKSUM: b2912501c576355685484516b1c78936fc553c02
+
+COCOAPODS: 1.9.3

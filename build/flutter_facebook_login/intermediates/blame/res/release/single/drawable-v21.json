@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\MD Bulbul Hossain\\Desktop\\code wooflux\\build\\flutter_facebook_login\\intermediates\\res\\merged\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\MD Bulbul Hossain\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\79ff0d3580d23f0e36ef32565bfb35c1\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\MD Bulbul Hossain\\Desktop\\code wooflux\\build\\flutter_facebook_login\\intermediates\\res\\merged\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\MD Bulbul Hossain\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\077b4085dd1f8299046f05b2641ef9fb\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\MD Bulbul Hossain\\Desktop\\code wooflux\\build\\flutter_facebook_login\\intermediates\\res\\merged\\release\\drawable-v21\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\MD Bulbul Hossain\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\79ff0d3580d23f0e36ef32565bfb35c1\\res\\drawable-v21\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\MD Bulbul Hossain\\Desktop\\code wooflux\\build\\flutter_facebook_login\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\MD Bulbul Hossain\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\79ff0d3580d23f0e36ef32565bfb35c1\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\MD Bulbul Hossain\\Desktop\\code wooflux\\build\\flutter_facebook_login\\intermediates\\res\\merged\\release\\drawable-v21\\abc_list_divider_material.xml",
+        "source": "C:\\Users\\MD Bulbul Hossain\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\79ff0d3580d23f0e36ef32565bfb35c1\\res\\drawable-v21\\abc_list_divider_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\MD Bulbul Hossain\\Desktop\\code wooflux\\build\\flutter_facebook_login\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\MD Bulbul Hossain\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\79ff0d3580d23f0e36ef32565bfb35c1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    }
+]

@@ -1,0 +1,644 @@
+-- Merging decision tree log ---
+data
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:64:17-69
+	android:scheme
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:51:23-72
+manifest
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+MERGED from [com.google.firebase:firebase-analytics:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-analytics-17.2.0.aar\ac85df12ea7ddaff4accd638f62d63c5\AndroidManifest.xml:2:1-9:12
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:2:1-26:12
+MERGED from [:google_sign_in] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\google_sign_in\intermediates\library_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:sqflite] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_facebook_login] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\flutter_facebook_login\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:sign_in_with_apple] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\sign_in_with_apple\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:razorpay_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:2:1-14:12
+MERGED from [:webview_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\webview_flutter\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\path_provider\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:rate_my_app] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\rate_my_app\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\shared_preferences\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:intro_slider] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\intro_slider\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:share] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\share\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-17.2.0.aar\aad664b332f41162163b560894b0ba13\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:17:1-39:12
+MERGED from [com.facebook.android:facebook-login:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-login-5.5.1.aar\0f085a6e69a9f24717763c08c00a2f1c\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:21:1-37:12
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\browser-1.2.0.aar\2e737aa9dda1964897b75882d690738b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:2:1-32:12
+MERGED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:21:1-61:12
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\webkit-1.0.0.aar\35f998817c023e8bc6ae47b55c4110d9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-17.2.0.aar\40e220bc91eeedf883fa622db1625f6c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-stats-17.0.0.aar\d61cf0ade522b7ecc12e2a570286c66f\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-api-phone-16.0.0.aar\704247d469f3ef89234d6a714f15fff0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-base-16.0.0.aar\ca6b74b6047397923005eec04c68d4ba\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-17.0.0.aar\5538b2b99e1105feb3b434466fc114e9\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\d9379cc3d6aa5ef4f9e62ea4b7cda3e5\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-18.0.0.aar\5802a2b191c3b14142be5eff39ef33e5\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-17.0.0.aar\86711b0feb6e70ed090cc5d22f0d5d88\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\57a245e6d6a328846271d7cb037809a4\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\79ff0d3580d23f0e36ef32565bfb35c1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\8a1548aae78e50a845576f43a6233382\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\935ffc5e048b39f98b9a8443fe85065b\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\66f0f5b674b29ba10e1c1a8b8565b170\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\a65ed9194498b81f3a69224a8a7cd935\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\b8aba88da6b80ea72a27ec1dd75034c1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\23bf39a82e9098b0d9888da867d964ba\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\5fa74df3f38617c7e767fcef22d54fa5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\85c87640f858a1915dbcf0b048e7160f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\49eab9514de4d164c97a3bb3c32b9276\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\e2f5bbc46c1ad3b2fba20bf0c98b571c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\7bceaff3d1db7e10975a2f2ec711e255\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\8a6dd3e4c5baaa62fee2a9297159ae59\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\2b3ab6b5861ff1e8f0b1a124fcd49af7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\3ccb48bec1da6e2d110fdf08f16ce2a5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\93e2da712f903ca488cf9e0c42d1b2e8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\5792f9469101ca3061a30d67a7244116\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\077b4085dd1f8299046f05b2641ef9fb\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.2.0.aar\97454086fec6e1d37bff1ec2c5dca13e\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\ff4850f53ac76db35130e4e40ce99020\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\28d0a80a3b7b79b1215568e8c9c39f2a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\3a32f62943a3ecd91fb45eb444a343df\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\e3be215d59087494d4b9a603a6ed6f0d\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\093b482530663c0475ee36e6c298cc6f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\baf58ea70e7ad5efadf9b469784b6483\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\5c16d41f3fa230430ca2e085f5e9bcb2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\33c677974b5ec54b851de5a70d921a84\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\954163f4136a04253aab1c896a66d90c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\683238847febd366b01b578fc70e6cce\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\6473934ab5f1fb06bc6ec15c33efb3d0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\8e199166e0bc58f65f98e6d40af437ae\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+	package
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:2:5-31
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:1-68:12
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:google_sign_in] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\google_sign_in\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\google_sign_in\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:22:5-67
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:9:5-67
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:5:22-76
+application
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:11:5-67:19
+MERGED from [com.google.firebase:firebase-analytics:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-analytics-17.2.0.aar\ac85df12ea7ddaff4accd638f62d63c5\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-analytics-17.2.0.aar\ac85df12ea7ddaff4accd638f62d63c5\AndroidManifest.xml:7:5-20
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:19:5-24:19
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:19:5-24:19
+MERGED from [:razorpay_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:7:5-12:19
+MERGED from [:razorpay_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:7:5-12:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-17.2.0.aar\aad664b332f41162163b560894b0ba13\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-17.2.0.aar\aad664b332f41162163b560894b0ba13\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:22:5-37:19
+MERGED from [com.facebook.android:facebook-login:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-login-5.5.1.aar\0f085a6e69a9f24717763c08c00a2f1c\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-login-5.5.1.aar\0f085a6e69a9f24717763c08c00a2f1c\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:28:5-35:19
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:11:5-30:19
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:11:5-30:19
+MERGED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:28:5-59:19
+MERGED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:28:5-59:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-17.2.0.aar\40e220bc91eeedf883fa622db1625f6c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-17.2.0.aar\40e220bc91eeedf883fa622db1625f6c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-stats-17.0.0.aar\d61cf0ade522b7ecc12e2a570286c66f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-stats-17.0.0.aar\d61cf0ade522b7ecc12e2a570286c66f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-17.0.0.aar\5538b2b99e1105feb3b434466fc114e9\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-17.0.0.aar\5538b2b99e1105feb3b434466fc114e9\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\d9379cc3d6aa5ef4f9e62ea4b7cda3e5\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\d9379cc3d6aa5ef4f9e62ea4b7cda3e5\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-18.0.0.aar\5802a2b191c3b14142be5eff39ef33e5\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-18.0.0.aar\5802a2b191c3b14142be5eff39ef33e5\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-17.0.0.aar\86711b0feb6e70ed090cc5d22f0d5d88\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-17.0.0.aar\86711b0feb6e70ed090cc5d22f0d5d88\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\57a245e6d6a328846271d7cb037809a4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\57a245e6d6a328846271d7cb037809a4\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\077b4085dd1f8299046f05b2641ef9fb\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\077b4085dd1f8299046f05b2641ef9fb\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\e3be215d59087494d4b9a603a6ed6f0d\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\e3be215d59087494d4b9a603a6ed6f0d\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\077b4085dd1f8299046f05b2641ef9fb\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from [com.facebook.android:facebook-login:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-login-5.5.1.aar\0f085a6e69a9f24717763c08c00a2f1c\AndroidManifest.xml:28:18-44
+	android:label
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:13:9-34
+	android:icon
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:14:9-43
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:12:9-57
+activity#com.hatbazar.net.MainActivity
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:15:9-33:20
+	android:launchMode
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:17:13-43
+	android:hardwareAccelerated
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:20:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:21:13-55
+	android:configChanges
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:19:13-144
+	android:theme
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:18:13-47
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:16:13-41
+meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:26:13-28:40
+	android:value
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:28:17-37
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:27:17-82
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:29:13-32:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:30:17-68
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:31:17-76
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:31:27-74
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:37:9-38:54
+	android:value
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:38:13-52
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:37:20-65
+activity#com.facebook.FacebookActivity
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:40:9-43:48
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:43:13-45
+	android:configChanges
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:41:13-113
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:40:19-63
+activity#com.facebook.CustomTabActivity
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:44:9-53:20
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:34:9-67
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:34:9-67
+	android:exported
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:46:13-36
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:45:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:47:13-52:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:48:17-69
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:48:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:49:17-76
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:49:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:50:17-78
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:50:27-75
+activity#com.braintreepayments.api.BraintreeBrowserSwitchActivity
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:58:9-66:20
+	android:launchMode
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:59:13-44
+	android:name
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:58:19-90
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.hatbazar.net.braintree
+ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml:60:13-65:29
+uses-sdk
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-analytics:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-analytics-17.2.0.aar\ac85df12ea7ddaff4accd638f62d63c5\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-analytics-17.2.0.aar\ac85df12ea7ddaff4accd638f62d63c5\AndroidManifest.xml:5:5-44
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:5:5-7:41
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:5:5-7:41
+MERGED from [:google_sign_in] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\google_sign_in\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\google_sign_in\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_facebook_login] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\flutter_facebook_login\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_facebook_login] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\flutter_facebook_login\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:sign_in_with_apple] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\sign_in_with_apple\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:sign_in_with_apple] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\sign_in_with_apple\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:razorpay_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:razorpay_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\webview_flutter\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\webview_flutter\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\path_provider\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\path_provider\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:rate_my_app] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\rate_my_app\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:rate_my_app] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\rate_my_app\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\shared_preferences\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\shared_preferences\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:intro_slider] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\intro_slider\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:intro_slider] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\intro_slider\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:share] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\share\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:share] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\share\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-17.2.0.aar\aad664b332f41162163b560894b0ba13\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-17.2.0.aar\aad664b332f41162163b560894b0ba13\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-login:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-login-5.5.1.aar\0f085a6e69a9f24717763c08c00a2f1c\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-login-5.5.1.aar\0f085a6e69a9f24717763c08c00a2f1c\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\browser-1.2.0.aar\2e737aa9dda1964897b75882d690738b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\browser-1.2.0.aar\2e737aa9dda1964897b75882d690738b\AndroidManifest.xml:20:5-22:41
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\webkit-1.0.0.aar\35f998817c023e8bc6ae47b55c4110d9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\webkit-1.0.0.aar\35f998817c023e8bc6ae47b55c4110d9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-17.2.0.aar\40e220bc91eeedf883fa622db1625f6c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-17.2.0.aar\40e220bc91eeedf883fa622db1625f6c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-stats-17.0.0.aar\d61cf0ade522b7ecc12e2a570286c66f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-stats-17.0.0.aar\d61cf0ade522b7ecc12e2a570286c66f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-api-phone-16.0.0.aar\704247d469f3ef89234d6a714f15fff0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-api-phone-16.0.0.aar\704247d469f3ef89234d6a714f15fff0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-base-16.0.0.aar\ca6b74b6047397923005eec04c68d4ba\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-base-16.0.0.aar\ca6b74b6047397923005eec04c68d4ba\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-17.0.0.aar\5538b2b99e1105feb3b434466fc114e9\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-17.0.0.aar\5538b2b99e1105feb3b434466fc114e9\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\d9379cc3d6aa5ef4f9e62ea4b7cda3e5\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\d9379cc3d6aa5ef4f9e62ea4b7cda3e5\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-18.0.0.aar\5802a2b191c3b14142be5eff39ef33e5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-18.0.0.aar\5802a2b191c3b14142be5eff39ef33e5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-17.0.0.aar\86711b0feb6e70ed090cc5d22f0d5d88\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-17.0.0.aar\86711b0feb6e70ed090cc5d22f0d5d88\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\57a245e6d6a328846271d7cb037809a4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\57a245e6d6a328846271d7cb037809a4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\79ff0d3580d23f0e36ef32565bfb35c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\79ff0d3580d23f0e36ef32565bfb35c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\8a1548aae78e50a845576f43a6233382\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\8a1548aae78e50a845576f43a6233382\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\935ffc5e048b39f98b9a8443fe85065b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\935ffc5e048b39f98b9a8443fe85065b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\66f0f5b674b29ba10e1c1a8b8565b170\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\66f0f5b674b29ba10e1c1a8b8565b170\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\a65ed9194498b81f3a69224a8a7cd935\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\a65ed9194498b81f3a69224a8a7cd935\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\b8aba88da6b80ea72a27ec1dd75034c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\b8aba88da6b80ea72a27ec1dd75034c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\23bf39a82e9098b0d9888da867d964ba\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\23bf39a82e9098b0d9888da867d964ba\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\5fa74df3f38617c7e767fcef22d54fa5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\5fa74df3f38617c7e767fcef22d54fa5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\85c87640f858a1915dbcf0b048e7160f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\85c87640f858a1915dbcf0b048e7160f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\49eab9514de4d164c97a3bb3c32b9276\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\49eab9514de4d164c97a3bb3c32b9276\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\e2f5bbc46c1ad3b2fba20bf0c98b571c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\e2f5bbc46c1ad3b2fba20bf0c98b571c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\7bceaff3d1db7e10975a2f2ec711e255\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\7bceaff3d1db7e10975a2f2ec711e255\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\8a6dd3e4c5baaa62fee2a9297159ae59\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\8a6dd3e4c5baaa62fee2a9297159ae59\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\2b3ab6b5861ff1e8f0b1a124fcd49af7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\2b3ab6b5861ff1e8f0b1a124fcd49af7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\3ccb48bec1da6e2d110fdf08f16ce2a5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\3ccb48bec1da6e2d110fdf08f16ce2a5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\93e2da712f903ca488cf9e0c42d1b2e8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\93e2da712f903ca488cf9e0c42d1b2e8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\5792f9469101ca3061a30d67a7244116\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\5792f9469101ca3061a30d67a7244116\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\077b4085dd1f8299046f05b2641ef9fb\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\077b4085dd1f8299046f05b2641ef9fb\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.2.0.aar\97454086fec6e1d37bff1ec2c5dca13e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.2.0.aar\97454086fec6e1d37bff1ec2c5dca13e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\ff4850f53ac76db35130e4e40ce99020\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\ff4850f53ac76db35130e4e40ce99020\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\28d0a80a3b7b79b1215568e8c9c39f2a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\28d0a80a3b7b79b1215568e8c9c39f2a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\3a32f62943a3ecd91fb45eb444a343df\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\3a32f62943a3ecd91fb45eb444a343df\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\e3be215d59087494d4b9a603a6ed6f0d\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\e3be215d59087494d4b9a603a6ed6f0d\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\093b482530663c0475ee36e6c298cc6f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\093b482530663c0475ee36e6c298cc6f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\baf58ea70e7ad5efadf9b469784b6483\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\baf58ea70e7ad5efadf9b469784b6483\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\5c16d41f3fa230430ca2e085f5e9bcb2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\5c16d41f3fa230430ca2e085f5e9bcb2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\33c677974b5ec54b851de5a70d921a84\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\33c677974b5ec54b851de5a70d921a84\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\954163f4136a04253aab1c896a66d90c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\954163f4136a04253aab1c896a66d90c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\683238847febd366b01b578fc70e6cce\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\683238847febd366b01b578fc70e6cce\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\6473934ab5f1fb06bc6ec15c33efb3d0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\6473934ab5f1fb06bc6ec15c33efb3d0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\8e199166e0bc58f65f98e6d40af437ae\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\8e199166e0bc58f65f98e6d40af437ae\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MD Bulbul Hossain\Desktop\code wooflux\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:9:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:10:5-66
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:10:22-63
+uses-feature#android.hardware.camera
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:12:5-14:36
+	android:required
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:14:9-33
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:13:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:15:5-17:36
+	android:required
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:17:9-33
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:16:9-57
+activity#io.card.payment.CardIOActivity
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:20:9-22:66
+	android:configChanges
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:22:13-63
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:21:13-58
+activity#io.card.payment.DataEntryActivity
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:23:9-70
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-android-sdk-5.5.1.aar\71a14538965c643ba88d9b38ba51d98e\AndroidManifest.xml:23:19-67
+activity#com.razorpay.CheckoutActivity
+ADDED from [:razorpay_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:20
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:18:9-29:20
+MERGED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:18:9-29:20
+	android:label
+		ADDED from [:razorpay_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:10:13-46
+	android:configChanges
+		ADDED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:20:13-83
+	android:theme
+		ADDED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:21:13-49
+	android:name
+		ADDED from [:razorpay_flutter] C:\Users\MD Bulbul Hossain\Desktop\code wooflux\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:9:13-57
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-17.2.0.aar\a79e0b536f006b46b44c212e5ca922a3\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:25:22-65
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-17.2.0.aar\fd2cd44684c106b0f327fd2e71fe1601\AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.0.aar\a6f33fe5f0c214c133441c2689552718\AndroidManifest.xml:49:13-87
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:28:13-84
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.0.aar\963a391bc9eaeea98ff81daf6b43d4b9\AndroidManifest.xml:31:17-139
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-auth-16.0.1.aar\20a143cff21e572d95f8f722c218c4da\AndroidManifest.xml:34:13-89
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-common-5.5.1.aar\67b3f5af9123ec40ceb9d1b06ecb4420\AndroidManifest.xml:33:19-68
+receiver#com.razorpay.RzpTokenReceiver
+ADDED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:12:9-16:20
+	android:name
+		ADDED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:12:19-63
+intent-filter#action:name:rzp.device_token.share
+ADDED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:13:13-15:29
+action#rzp.device_token.share
+ADDED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:14:17-65
+	android:name
+		ADDED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:14:25-62
+intent-filter#action:name:android.intent.action.MAIN+data:host:rzp.io+data:scheme:io.rzp
+ADDED from [com.razorpay:checkout:1.5.16] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\checkout-1.5.16.aar\af80a2f470062e22c5831b9e507d37f2\AndroidManifest.xml:22:13-28:29
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:48:25-92
+receiver#com.facebook.CampaignTrackingReceiver
+ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:51:9-58:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:53:13-36
+	android:permission
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:54:13-69
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.5.1] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-facebook-core-5.5.1.aar\fd83c6e26bfeb12915c6e17ded96add3\AndroidManifest.xml:52:13-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-iid-19.0.0.aar\328600f73d7361bb2739646a4f86b6f5\AndroidManifest.xml:42:25-78
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\firebase-common-19.0.0.aar\3c82ed78c323ddd05383b2a4901cef66\AndroidManifest.xml:13:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\8cbcdc066e8c88813d1cca2f355bc628\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\57a245e6d6a328846271d7cb037809a4\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\57a245e6d6a328846271d7cb037809a4\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\MD Bulbul Hossain\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\57a245e6d6a328846271d7cb037809a4\AndroidManifest.xml:24:13-58
