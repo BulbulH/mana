@@ -26,7 +26,7 @@ int tabIndex = 0;
 
 class HomeScreen extends StatefulWidget {
   @override
-  _HomeScreenState createState()  =>_HomeScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       _scaffoldKey.currentState.openDrawer();
                     }, Icons.menu),
                     Text(
-                      APPNAME + " Store",
+                      APPNAME,
                       style: TextStyle(
                         color: themeAppBarItems,
                         fontSize: 20.0,
@@ -167,27 +167,65 @@ class _HomeScreenState extends State<HomeScreen> {
                               ))
                               ..addAll(
                                 List.generate(categories.length, (index) {
-                                  return getListItem(
-                                      categories[index].image != null
-                                          ? categories[index].image.src
-                                          : "",
-                                      categories[index].name,
-                                      "",
-                                      categories[index].description,
-                                      Icons.arrow_forward_ios, () {
-                                    List<GetAllProducts> _subProduct = List();
-                                    products.forEach((element) {
-                                      if (element.categories.contains(
-                                          categories[index].name.toString())) {
-                                        _subProduct.add(element);
-                                      }
-                                    });
-                                    Navigator.pushNamed(context, '/subproduct',
-                                        arguments: {
+                                  print(categories.length);
+                                  /* print("________________________");
+                                  print(categories[index].toJson());
+                                  print(categories.length);
+*/
+                                  if (categories[index].image == null) {
+                                    if (categories[index].name == "All") {
+                                      return getListItem(
+                                          categories[index].image != null
+                                              ? categories[index].image.src
+                                              : "",
+                                          categories[index].name,
+                                          "",
+                                          categories[index].description,
+                                          Icons.arrow_forward_ios, () {
+                                        List<GetAllProducts> _subProduct =
+                                            List();
+                                        products.forEach((element) {
+                                          if (element.categories.contains(
+                                              categories[index]
+                                                  .name
+                                                  .toString())) {
+                                            _subProduct.add(element);
+                                          }
+                                        });
+                                        Navigator.pushNamed(
+                                            context, '/subproduct', arguments: {
                                           '_subProducts': _subProduct,
                                           '_title': categories[index].name
                                         });
-                                  });
+                                      });
+                                    } else {
+                                      return Container();
+                                    }
+                                  } else {
+                                    return getListItem(
+                                        categories[index].image != null
+                                            ? categories[index].image.src
+                                            : "",
+                                        categories[index].name,
+                                        "",
+                                        categories[index].description,
+                                        Icons.arrow_forward_ios, () {
+                                      List<GetAllProducts> _subProduct = List();
+                                      products.forEach((element) {
+                                        if (element.categories.contains(
+                                            categories[index]
+                                                .name
+                                                .toString())) {
+                                          _subProduct.add(element);
+                                        }
+                                      });
+                                      Navigator.pushNamed(
+                                          context, '/subproduct', arguments: {
+                                        '_subProducts': _subProduct,
+                                        '_title': categories[index].name
+                                      });
+                                    });
+                                  }
                                 }),
                               ),
                           ),
@@ -203,15 +241,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                             HomeScreen()));
                               },
                               child: ListTile(
-                                title: Text("Setting",
+                                title: Text(
+                                  "Setting",
                                   style: TextStyle(
                                       color: themeTextColor,
                                       fontSize: 14,
-                                      fontWeight: FontWeight.w600),),
+                                      fontWeight: FontWeight.w600),
                                 ),
+                              ),
                             ),
                           ),
-
                           getListItemLogout(
                               Icons.call_missed_outgoing,
                               (prefs.getBool(ISLOGIN) ?? false)
@@ -247,7 +286,6 @@ class _HomeScreenState extends State<HomeScreen> {
       String description, IconData trailing, Function callback) {
     return ListTile(
       onTap: callback,
-
       title: Row(
         children: <Widget>[
           Text(

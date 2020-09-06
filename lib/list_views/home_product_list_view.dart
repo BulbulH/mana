@@ -221,6 +221,8 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                      addORupdateCartProductsPref(item).then((isUpdated){
                        ProductScreenState.setState(() {});
                      });}
+                   setState(() {
+                   });
                  },
                  child: Container(
                    height: 40,
@@ -262,6 +264,8 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                    addORupdateCartProductsPref(item).then((isUpdated){
                      ProductScreenState.setState(() {});
                    });
+                   setState(() {
+                   });
                  },
                  child: Container(
                    height: 40,
@@ -294,6 +298,8 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                     else
                       addORupdateCartProductsPref(Line_items(data.id, -1, 1));
                     ProductScreenState.setState(() {});
+                    setState(() {
+                    });
                 },
                 child: Container(
                     decoration: BoxDecoration(

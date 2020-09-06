@@ -327,7 +327,13 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
       //GetAllProducts getallproduct= getProductFromId(cartList[1].product_id);
       cartList.forEach((element) async {
         if(getProductFromId(element.product_id)!=null) {
-          double price= double.parse( getProductFromId(element.product_id).price);
+          double price;
+          try {
+            price= double.parse( getProductFromId(element.product_id).price);
+          } on Exception catch (e) {
+            price =0.0;
+          }
+
           totalCost+=price*element.quantity;
         }
     });

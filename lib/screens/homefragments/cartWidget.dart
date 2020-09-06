@@ -154,8 +154,14 @@ class _CartScreenState extends State<CartScreen>  {
         :null;
     if(variant!=null)
       price=double.parse(variant.price);
-    else
-      price=double.parse(getallproduct.price);
+    else{
+      try {
+        price=double.parse(getallproduct.price);
+      } on Exception catch (e) {
+        price=0;
+      }
+    }
+
 
     itemPriceText= LocalLanguageString().price + " :" + " ${price} ${currencyCode==null?"":currencyCode} ";
     itemSubtotalText= LocalLanguageString().subtotal + " :" + " ${price* item.quantity} ${currencyCode==null?"":currencyCode} ";
@@ -208,6 +214,7 @@ class _CartScreenState extends State<CartScreen>  {
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
               padding: EdgeInsets.all(5),
@@ -245,18 +252,20 @@ class _CartScreenState extends State<CartScreen>  {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Container(
-                        child: Text(
-                          "${getallproduct!=null?
-                              getallproduct.title!=null?getallproduct.title:""
-                              :""}".toUpperCase(),
-                          overflow: TextOverflow.fade,
-                          softWrap: true,
-                          style: TextStyle(
-                              color: themeTextColor,
-                              fontSize: 15,
-                              fontFamily: "Normal",
-                              fontWeight: FontWeight.w700
+                      Flexible(
+                        child: Container(
+                          child: Text(
+                            "${getallproduct!=null?
+                                getallproduct.title!=null?getallproduct.title:""
+                                :""}".toUpperCase(),
+                            overflow: TextOverflow.fade,
+                            softWrap: true,
+                            style: TextStyle(
+                                color: themeTextColor,
+                                fontSize: 15,
+                                fontFamily: "Normal",
+                                fontWeight: FontWeight.w700
+                            ),
                           ),
                         ),
                       ),

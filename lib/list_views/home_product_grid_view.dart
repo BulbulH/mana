@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterecom/WidgetHelper/CustomIcons.dart';
 import 'package:flutterecom/models/request/createOrderModel.dart';
 import 'package:flutterecom/models/responce/getAllProductsResponceModel.dart';
+import 'package:flutterecom/screens/homefragments/productsWidget.dart';
 import 'package:flutterecom/screens/splashWidget.dart';
 import 'package:flutterecom/utils/appTheme.dart';
 import 'package:flutterecom/utils/languages_local.dart';
@@ -41,7 +42,7 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
         crossAxisCount: 2,
         mainAxisSpacing: 3.0,
         crossAxisSpacing: 8.0,
-        childAspectRatio: 0.65,//w/h
+        childAspectRatio: 0.55,//w/h
       ),
       padding: const EdgeInsets.all(8),
       physics: const BouncingScrollPhysics(),
@@ -66,106 +67,28 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
   }
   Widget itemView(GetAllProducts data) {
     bool isWishListed=false;
+    Line_items item;
+    bool isCartItem = getCartProductsPref().firstWhere((element) {
+      if( element.product_id == data.id){
+        item=element;
+        return true;
+      }else{
+        return false;
+      }
 
-    bool isCartItem=getCartProductsPref().firstWhere((element) => element.product_id==data.id,orElse:() => null)!=null;
+    }, orElse: () => null) !=
+        null;
+
+   // bool isCartItem=getCartProductsPref().firstWhere((element) => element.product_id==data.id,orElse:() => null)!=null;
 
     wishList.forEach((element) {
       if(element==data.id)
         isWishListed=true;
     });
 
-   /* return SizedBox(
-      height: 100,
-      width: double.infinity,
-      child: Row(
-        children: [
-          Container(
-            height: 80,
-            width: 80,
-              child:data.images.length>0?ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(4)),
-                  child:  CachedNetworkImage(
-                    imageUrl: data.images[0].src,
-                    imageBuilder: (context, imageProvider) => Container(
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: imageProvider,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                    placeholder: (context, url) => Center(child: JumpingDotsProgressIndicator(fontSize: 20.0,)),
-                    errorWidget: (context, url, error) => Center(child:Icon(Icons.filter_b_and_w),),
-                  )
-              ):Container(height: 80,width: 80,)
-          ),
-          Container(
-            height: 80,
-            child: Column(
-              children: [
-                Text(
-                  data.title==null?"":data.title,
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    fontFamily: "Normal",
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
-                    letterSpacing: 0.27,
-                    color: themeTextColor,
-                  ),
-                ),
 
-                Row(
-                  children: [
-                    Text(
-                      LocalLanguageString().cost+" :"+" ${data.price} ${currencyCode==null?"":currencyCode}",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontFamily: "Normal",
-                        fontWeight: FontWeight.w600,
-                        fontSize: 12,
-                        color: themeTextColor,
-                      ),
-                    ),
-                    data.on_sale?
-                    data.regular_price!=null?Text(" ${data.regular_price} ${currencyCode==null?"":currencyCode}",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontFamily: "Normal",
-                        fontWeight: FontWeight.w600,
-                        decoration: TextDecoration.lineThrough,
-                        fontSize: 10,
-                        color: themeTextColor.withOpacity(0.5),
-                      ),
-                    ):Container()
-                        :Container(),
-                  ],
-                ),
-
-              ],
-            ),
-          ),
-          Container(
-            child: GestureDetector(
-              onTap: (){
-                if(isCartItem)
-                  delCartProductsPref(data.id);
-                else
-                  addORupdateCartProductsPref(Line_items(data.id, -1, 1));
-                setState(() {});
-              },
-              child: Image.asset(
-                isCartItem?"assets/removecart.png":"assets/addcart.png",width: 25,height: 25,color:isCartItem?themeTextColor:themeTextHighLightColor,
-              ),
-
-            ),
-          )
-        ],
-      ),
-    );*/
-
-    return  Container(
+    return  Card(
+      color: themeBG,
       child: Flex(
         direction: Axis.vertical,
         children: <Widget>[
@@ -225,7 +148,7 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
           Expanded(
               flex: 5,
               child: Flex(
-                direction: Axis.horizontal,
+                direction: Axis.vertical,
                 children: <Widget>[
                   Expanded(
                     flex: 7,
@@ -299,8 +222,8 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
                     ),
                   ),
                   Expanded(
-                    flex: 2,
-                    child: GestureDetector(
+                    flex: 3,
+                 /*   child: GestureDetector(
                       onTap: (){
                         if(isCartItem)
                           delCartProductsPref(data.id);
@@ -312,6 +235,119 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
                         isCartItem?"assets/removecart.png":"assets/addcart.png",width: 25,height: 25,color:isCartItem?themeTextColor:themeTextHighLightColor,
                       ),
 
+                    ),*/
+                    child: isCartItem? Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            if(item.quantity==1){
+                              delCartProductsPref(item.product_id).then((isdeleted){
+                                ProductScreenState.setState(() {});
+                              });
+                            }else{
+                              if(item.quantity>1)
+                                item.quantity-=1;
+                              addORupdateCartProductsPref(item).then((isUpdated){
+                                ProductScreenState.setState(() {});
+                              });}
+                            setState(() {
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(50)),
+                            alignment: Alignment.center,
+                            child: Padding(
+                              padding: const EdgeInsets.all(6.0),
+                              child: Icon(
+                                Icons.remove,
+                                color: themePrimary,
+                                size: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+
+                        Card(
+                          color: themeBG,
+                          child: Padding(
+                            padding: const EdgeInsets.all(7),
+                            child: Text(
+                              item.quantity.toString(),
+                              style: TextStyle(
+                                  fontFamily: "Normal",
+                                  color: themeTextColor,
+
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w700
+                              ),
+                            ),
+                          ),
+                        ),
+
+                        InkWell(
+                          onTap: (){
+                            if(item.quantity<30)
+                              item.quantity+=1;
+                            addORupdateCartProductsPref(item).then((isUpdated){
+                              ProductScreenState.setState(() {});
+                            });
+                            setState(() {
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(50)),
+                            alignment: Alignment.center,
+                            child: Padding(
+                              padding: const EdgeInsets.all(6.0),
+                              child: Icon(
+                                Icons.add,
+                                color: themePrimary,
+                                size: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+
+                      ],
+                    ): Align(
+                      alignment: Alignment.centerRight,
+                      child: Card(
+                        color: themeBG,
+                        child: Container(
+                          width: 50,
+                          height: 50,
+                          child: GestureDetector(
+                            onTap: () {
+                              if (isCartItem)
+                                delCartProductsPref(data.id);
+                              else
+                                addORupdateCartProductsPref(Line_items(data.id, -1, 1));
+                              ProductScreenState.setState(() {});
+                              setState(() {
+                              });
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50)),
+                              alignment: Alignment.center,
+                              child: Padding(
+                                padding: const EdgeInsets.all(6.0),
+                                child: Icon(
+                                  Icons.add,
+                                  color: themePrimary,
+                                  size: 27,
+                                ),
+                              ),
+                            ),
+
+                          ),
+                        ),
+                      ),
                     ),
                   )
                 ],

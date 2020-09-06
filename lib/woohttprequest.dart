@@ -163,11 +163,13 @@ class WooHttpRequest {
       "Authorization": basicAuth
     };
 
-    final response = await http.get(WP_JSON_WC+"products/categories",headers: headers);
+    final response = await http.get(WP_JSON_WC+"products/categories?per_page=100",headers: headers);
 
     if (response.statusCode == 200) {
       List responseJson = json.decode(response.body);
-
+      print("________________________");
+      print(responseJson);
+      print("________________________");
       List catDataList=responseJson.map((data) {
         return GetAllProductCategories.fromJson(data);
       }).toList();

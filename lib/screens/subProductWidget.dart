@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterecom/WidgetHelper/CustomIcons.dart';
 import 'package:flutterecom/WidgetHelper/productImageSlider.dart';
 import 'package:flutterecom/list_views/home_product_grid_view.dart';
+import 'package:flutterecom/list_views/home_product_list_view.dart';
 import 'package:flutterecom/main.dart';
 import 'package:flutterecom/models/request/createOrderModel.dart';
 import 'package:flutterecom/models/responce/getAllProductsResponceModel.dart';
@@ -17,9 +18,13 @@ import 'package:flutterecom/utils/languages_local.dart';
 import 'package:flutterecom/utils/prefrences.dart';
 import 'package:flutter_html/flutter_html.dart';
 
+_SubProductScreenScreenState SubProductScreenScreenState;
 class SubProductScreen extends StatefulWidget {
   @override
-  _SubProductScreenScreenState createState() => _SubProductScreenScreenState();
+  _SubProductScreenScreenState createState() {
+    SubProductScreenScreenState= _SubProductScreenScreenState();
+   return SubProductScreenScreenState;
+  }
 }
 
 class _SubProductScreenScreenState extends State<SubProductScreen>   {
@@ -95,7 +100,7 @@ class _SubProductScreenScreenState extends State<SubProductScreen>   {
           Expanded(
             flex: 10,
             child: Container(
-                child: HomeProductGridView(
+                child: HomeProductListView(
                   products: subscreenProducts,
                   callBack: (String productId) {
                     Navigator.pushNamed(context, '/homeproductdetail', arguments: {'_productId': productId});

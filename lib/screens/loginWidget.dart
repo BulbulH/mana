@@ -213,7 +213,7 @@ class _MyAppState extends State<LoginWidget> {
               flex: 1,
               child: Center(
                 child: Text(
-                  "@Copyright :WooFlux Store.",
+                  "@Copyright :BDCoder.",
                   style: TextStyle(
                     fontFamily: "Normal",
                     fontWeight: FontWeight.w600,

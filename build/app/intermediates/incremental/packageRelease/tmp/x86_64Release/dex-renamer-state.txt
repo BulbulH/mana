@@ -1,4 +1,4 @@
-#Thu Sep 03 19:36:15 BDT 2020
+#Sun Sep 06 17:43:41 BDT 2020
 base.0=C\:\\Users\\MD Bulbul Hossain\\Desktop\\code wooflux\\build\\app\\intermediates\\transforms\\r8\\release\\0
 path.0=classes.dex
 renamed.0=classes.dex

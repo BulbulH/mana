@@ -146,7 +146,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               "", Icons.arrow_forward_ios, () {
                             Share.share(Platform.isIOS
                                 ? "YOUR IPHONE APP LINK "
-                                : "YOUR ANDROID APP LINK",
+                                : "https://play.google.com/store/apps/details?id=com.hatbazar.net",
                                 subject: 'Get this link from developer console');
                           }),
 
