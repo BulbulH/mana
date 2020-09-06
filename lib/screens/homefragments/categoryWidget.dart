@@ -19,6 +19,9 @@ class CategoryScreen extends StatefulWidget {
 }
 
 class _CategoryScreenState extends State<CategoryScreen>  {
+
+
+
   @override
   void initState() {
     super.initState();
@@ -26,12 +29,26 @@ class _CategoryScreenState extends State<CategoryScreen>  {
   @override
   Widget build(BuildContext context) {
 
+    List<Widget> catagory= List();
+
+    categories.forEach((element) {
+        if(element.image!=null)
+          catagory.add( ItemView(data: element));
+    });
+
     return Scaffold(
       backgroundColor: themeBG,
       body: Container(
         padding: EdgeInsets.all(10),
-          child: ListView(
-            children: categories.map((cat) => ItemView(data: cat)).toList()
+          child: GridView(
+             // shrinkWrap: true,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 3.0,
+                crossAxisSpacing: 4.0,
+               // childAspectRatio: .65, //w/h
+              ),
+            children: catagory
 //            Container(height: 90,width: 90,color: Colors.lightBlueAccent,)
           )
       ),
@@ -48,26 +65,28 @@ class ItemView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double ITEMHEIGHT=120;
+    //double ITEMHEIGHT=120;
     List<GetAllProducts> _subProduct=List();
     products.forEach((element) {
       if(element.categories.contains(data.name.toString()))
       {
         _subProduct.add(element);
       }
+
     });
+
     return GestureDetector(
       onTap: () {
         Navigator.pushNamed(context, '/subproduct', arguments: {'_subProducts': _subProduct, '_title': data.name});
       },
-      child: Container(
-
-        margin: EdgeInsets.all(8),
+      child: Card(
+        color: themeBG,
+        //margin: EdgeInsets.all(8),
         child: Stack(
           children: <Widget>[
             data.image!=null?
             Container(
-                height: ITEMHEIGHT,
+               // height: ITEMHEIGHT,
                 child: CachedNetworkImage(
                   imageUrl: data.image.src,
                   imageBuilder: (context, imageProvider) => Container(
@@ -90,7 +109,7 @@ class ItemView extends StatelessWidget {
               alignment: Alignment.bottomRight,
               child: Container(
                 alignment: Alignment.bottomRight,
-                height: ITEMHEIGHT,
+               // height: ITEMHEIGHT,
                 decoration: BoxDecoration(
                   border: Border.all(width: 0.0),
                   borderRadius: BorderRadius.all(
@@ -110,7 +129,7 @@ class ItemView extends StatelessWidget {
                       fontFamily: "Header",
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
-                      color: themeTextColor
+                      color: Colors.black
                     ),
                   ),
                 )

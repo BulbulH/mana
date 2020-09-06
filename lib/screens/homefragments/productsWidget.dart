@@ -66,19 +66,7 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
       body: Container(
         child: Column(
           children: [
-            Expanded(
-              child: ListView(
-                children: [
-                  getSearchBarUI(),
-                  /*   specialWCFMHeader(),
-                  TagSlidingCard().getTagsHeader(),*/
-                  //@todo top image card
-                 // getCategoryUI(context),
-                  //Divider(),
-                  getPopularProductUI(),
-                ],
-              ),
-            ),
+            Expanded(child: getPopularProductUI()),
             AnimatedContainer(
               duration: Duration(milliseconds: 300),
               height: checkOutHeight,
@@ -371,6 +359,7 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
     return Container(
       child:  Column(
         children: [
+          getSearchBarUI(),
           Container(
             padding:  EdgeInsets.all( 8.0,),
             margin:  EdgeInsets.only(top: 13.0,),
@@ -387,34 +376,38 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
               ),
             ),
           ),
-          Container(
-              child: ( prefs.getBool(ISGRID) ?? false)?
-              StreamBuilder(
-                stream: homeBloc.getProductStreamController.stream,
-                initialData: products,
-                builder: (BuildContext context, AsyncSnapshot snapshot) {
-                  return snapshot.data!=null?Container(
-                    child: HomeProductGridView(
+          Expanded(
+            child: Container(
+                child: ( prefs.getBool(ISGRID) ?? false)?
+                StreamBuilder(
+                  stream: homeBloc.getProductStreamController.stream,
+                  initialData: products,
+                  builder: (BuildContext context, AsyncSnapshot snapshot) {
+                    return snapshot.data!=null?Container(
+                      child: HomeProductGridView(
+                        fromMainPage: true,
+                        products: snapshot.data,
+                        callBack: (String productId) {
+                          Navigator.pushNamed(context, '/homeproductdetail', arguments: {'_productId': productId});
+                        },
+                      ),
+                    ):Container();
+                  },
+                ):
+                StreamBuilder(
+                  stream: homeBloc.getProductStreamController.stream,
+                  initialData: products,
+                  builder: (BuildContext context, AsyncSnapshot snapshot) {
+                    return snapshot.data!=null?HomeProductListView(
+                      fromMainPage: true,
                       products: snapshot.data,
                       callBack: (String productId) {
                         Navigator.pushNamed(context, '/homeproductdetail', arguments: {'_productId': productId});
                       },
-                    ),
-                  ):Container();
-                },
-              ):
-              StreamBuilder(
-                stream: homeBloc.getProductStreamController.stream,
-                initialData: products,
-                builder: (BuildContext context, AsyncSnapshot snapshot) {
-                  return snapshot.data!=null?HomeProductListView(
-                    products: snapshot.data,
-                    callBack: (String productId) {
-                      Navigator.pushNamed(context, '/homeproductdetail', arguments: {'_productId': productId});
-                    },
-                  ):Container();
-                },
-              ),
+                    ):Container();
+                  },
+                ),
+            ),
           ),
 
         ],

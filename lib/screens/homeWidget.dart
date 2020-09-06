@@ -168,10 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ..addAll(
                                 List.generate(categories.length, (index) {
                                   print(categories.length);
-                                  /* print("________________________");
-                                  print(categories[index].toJson());
-                                  print(categories.length);
-*/
+
                                   if (categories[index].image == null) {
                                     if (categories[index].name == "All") {
                                       return getListItem(

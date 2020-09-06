@@ -13,8 +13,9 @@ import 'package:progress_indicators/progress_indicators.dart';
 class HomeProductGridView extends StatefulWidget {
   final List<GetAllProducts> products;
   final Function callBack;
+  final fromMainPage;
 
-  const HomeProductGridView({Key key, this.products, this.callBack}) : super(key: key);
+  const HomeProductGridView({Key key, this.products, this.callBack, this.fromMainPage}) : super(key: key);
   @override
   _PopularProductGridViewState createState() => _PopularProductGridViewState();
 }
@@ -36,7 +37,7 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
   @override
   Widget build(BuildContext context) {
     wishList=getWhishlistPref();
-    return  GridView(
+    return  GridView.builder(
       shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
@@ -47,9 +48,25 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
       padding: const EdgeInsets.all(8),
       physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.vertical,
-      children: List<Widget>.generate(
+      itemCount: widget.products.length,
+        itemBuilder: (BuildContext ctxt, int index) {
+          print(index);
+        return Container(
+          height: 100,
+          width: double.infinity,
+          //color: Colors.red,
+          child: GestureDetector(
+            onTap: (){
+              Navigator.pushNamed(context, '/homeproductdetail', arguments: {'_productId': widget.products[index].id});
+            },
+            child: itemView(widget.products[index],),
+          ),
+        );
+        }
+      /*children: List<Widget>.generate(
         widget.products.length,
             (int index) {
+              print(index);
           return Container(
             height: 100,
             width: double.infinity,
@@ -62,7 +79,7 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
             ),
           );
         },
-      ),
+      ),*/
     );
   }
   Widget itemView(GetAllProducts data) {
@@ -243,13 +260,13 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
                           onTap: () {
                             if(item.quantity==1){
                               delCartProductsPref(item.product_id).then((isdeleted){
-                                ProductScreenState.setState(() {});
+                                if(widget.fromMainPage==true)ProductScreenState.setState(() {});
                               });
                             }else{
                               if(item.quantity>1)
                                 item.quantity-=1;
                               addORupdateCartProductsPref(item).then((isUpdated){
-                                ProductScreenState.setState(() {});
+                                if(widget.fromMainPage==true)ProductScreenState.setState(() {});
                               });}
                             setState(() {
                             });
@@ -292,7 +309,7 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
                             if(item.quantity<30)
                               item.quantity+=1;
                             addORupdateCartProductsPref(item).then((isUpdated){
-                              ProductScreenState.setState(() {});
+                              if(widget.fromMainPage==true)ProductScreenState.setState(() {});
                             });
                             setState(() {
                             });
@@ -327,7 +344,7 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
                                 delCartProductsPref(data.id);
                               else
                                 addORupdateCartProductsPref(Line_items(data.id, -1, 1));
-                              ProductScreenState.setState(() {});
+                              if(widget.fromMainPage==true)ProductScreenState.setState(() {});
                               setState(() {
                               });
                             },

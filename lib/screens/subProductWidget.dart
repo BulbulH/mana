@@ -101,6 +101,7 @@ class _SubProductScreenScreenState extends State<SubProductScreen>   {
             flex: 10,
             child: Container(
                 child: HomeProductListView(
+                  fromMainPage: false,
                   products: subscreenProducts,
                   callBack: (String productId) {
                     Navigator.pushNamed(context, '/homeproductdetail', arguments: {'_productId': productId});

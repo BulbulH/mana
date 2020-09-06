@@ -14,8 +14,9 @@ import 'package:progress_indicators/progress_indicators.dart';
 class HomeProductListView extends StatefulWidget {
   final List<GetAllProducts> products;
   final Function callBack;
+  final fromMainPage;
 
-  const HomeProductListView({Key key, this.products, this.callBack})
+  const HomeProductListView({Key key, this.products, this.callBack, this.fromMainPage})
       : super(key: key);
   @override
   _PopularProductGridViewState createState() => _PopularProductGridViewState();
@@ -24,11 +25,27 @@ class HomeProductListView extends StatefulWidget {
 class _PopularProductGridViewState extends State<HomeProductListView>
     with TickerProviderStateMixin {
   AnimationController animationController;
+  var _controller = ScrollController();
+
   List wishList;
   @override
   void initState() {
     animationController = AnimationController(
         duration: const Duration(milliseconds: 2000), vsync: this);
+
+/*    // set up listener here
+    _controller.addListener(() {
+      if (_controller.position.atEdge) {
+        if (_controller.position.pixels == 0){
+          // you are at top position
+
+        }
+
+
+      //else you are at bottom position
+    }
+    });*/
+
     super.initState();
   }
 
@@ -40,7 +57,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
   @override
   Widget build(BuildContext context) {
     wishList = getWhishlistPref();
-    return GridView(
+    return GridView.builder(
       shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 1,
@@ -51,9 +68,28 @@ class _PopularProductGridViewState extends State<HomeProductListView>
       padding: const EdgeInsets.all(7),
       physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.vertical,
-      children: List<Widget>.generate(
+
+      itemCount: widget.products.length,
+
+        itemBuilder: (BuildContext ctxt, int index) {
+          print(index);
+          return GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/homeproductdetail',
+                  arguments: {'_productId': widget.products[index].id});
+            },
+            child: Container(
+                height: 100,
+                child: itemView(
+                  widget.products[index],
+                )),
+          );
+        }
+
+      /*children: List<Widget>.generate(
         widget.products.length,
         (int index) {
+          print(index);
           return GestureDetector(
             onTap: () {
               Navigator.pushNamed(context, '/homeproductdetail',
@@ -66,7 +102,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                 )),
           );
         },
-      ),
+      ),*/
     );
   }
 
@@ -211,15 +247,16 @@ class _PopularProductGridViewState extends State<HomeProductListView>
              children: [
                InkWell(
                  onTap: () {
+                   print(widget.fromMainPage);
                    if(item.quantity==1){
                      delCartProductsPref(item.product_id).then((isdeleted){
-                       ProductScreenState.setState(() {});
+                       if(widget.fromMainPage==true) ProductScreenState.setState(() {});
                      });
                    }else{
                      if(item.quantity>1)
                        item.quantity-=1;
                      addORupdateCartProductsPref(item).then((isUpdated){
-                       ProductScreenState.setState(() {});
+                       if(widget.fromMainPage==true) ProductScreenState.setState(() {});
                      });}
                    setState(() {
                    });
@@ -262,7 +299,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                    if(item.quantity<30)
                      item.quantity+=1;
                    addORupdateCartProductsPref(item).then((isUpdated){
-                     ProductScreenState.setState(() {});
+                     if(widget.fromMainPage==true) ProductScreenState.setState(() {});
                    });
                    setState(() {
                    });
@@ -297,7 +334,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                       delCartProductsPref(data.id);
                     else
                       addORupdateCartProductsPref(Line_items(data.id, -1, 1));
-                    ProductScreenState.setState(() {});
+                    if(widget.fromMainPage==true) ProductScreenState.setState(() {});
                     setState(() {
                     });
                 },
