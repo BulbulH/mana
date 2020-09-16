@@ -27,59 +27,68 @@ import 'package:rate_my_app/rate_my_app.dart';
 import 'package:share/share.dart';
 
 _ProductScreenState ProductScreenState;
-double checkOutHeight=0;
-class ProductScreen extends StatefulWidget  {
+double checkOutHeight = 0;
 
+class ProductScreen extends StatefulWidget {
   @override
   _ProductScreenState createState() {
-    ProductScreenState= _ProductScreenState();
+    ProductScreenState = _ProductScreenState();
     return ProductScreenState;
   }
 }
 
-class _ProductScreenState extends State<ProductScreen> with TickerProviderStateMixin , CategoryButton{
+class _ProductScreenState extends State<ProductScreen>
+    with TickerProviderStateMixin, CategoryButton {
   AnimationController animationController;
 
-  int REFRESHDELAY=1;
+  int REFRESHDELAY = 1;
   List<Line_items> cartList;
-  CouponSelection couponSelection=CouponSelection.TextField;
+  CouponSelection couponSelection = CouponSelection.TextField;
   TextEditingController couponController = TextEditingController();
-  GetAllCoupon _coupon=null;
+  GetAllCoupon _coupon = null;
   String itemPriceText;
   String itemSubtotalText;
-  double totalCost=0;
+  double totalCost = 0;
 
   @override
   Future<void> initState() {
-    animationController = AnimationController(duration: const Duration(milliseconds: 2000), vsync: this);
+    getTotalPrice();
+    animationController = AnimationController(
+        duration: const Duration(milliseconds: 2000), vsync: this);
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
     getTotalPrice();
 
-
     return Scaffold(
-      backgroundColor: themeBG,
-      body: Container(
-        child: Column(
-          children: [
-            Expanded(child: getPopularProductUI()),
-            AnimatedContainer(
-              duration: Duration(milliseconds: 300),
-              height: checkOutHeight,
-              color: themeBG,
-              width: double.infinity,
-              child:  SingleChildScrollView(child: _checkoutSection(context)),
-            )
-          ],
-        ),
-
-      )
-    );
-
+        backgroundColor: themeBG,
+        body: Container(
+          child: Column(
+            children: [
+              Expanded(
+                child: ListView(
+                  children: [
+                    getSearchBarUI(),
+                    //specialWCFMHeader(),
+                    TagSlidingCard().getTagsHeader(),
+                   // getCategoryUI(context),
+                    Divider(),
+                    getPopularProductUI(),
+                  ],
+                ),
+              ),
+              AnimatedContainer(
+                duration: Duration(milliseconds: 300),
+                height: checkOutHeight,
+                color: themeBG,
+                width: double.infinity,
+                child: SingleChildScrollView(child: _checkoutSection(context)),
+              ),
+            ],
+          ),
+        ));
   }
 
   Widget _checkoutSection(BuildContext context) {
@@ -90,8 +99,9 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
         children: <Widget>[
           Stack(
             children: [
-              (coupons!=null&&coupons.length>0)?
-              getCoupon():Container()
+              (coupons != null && coupons.length > 0)
+                  ? getCoupon()
+                  : Container()
             ],
           ),
           Container(
@@ -99,7 +109,7 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
               child: Row(
                 children: <Widget>[
                   Text(
-                    LocalLanguageString().checkoutprice+" :",
+                    LocalLanguageString().checkoutprice + " :",
                     style: TextStyle(
                       color: themeTextColor,
                       fontFamily: "Normal",
@@ -108,7 +118,7 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                     ),
                   ),
                   Spacer(),
-                 /* FutureBuilder(
+                  /* FutureBuilder(
                       future: getTotalPrice(),
                       initialData: "Loading ..",
                       builder: (BuildContext context, AsyncSnapshot<String> text) {
@@ -131,23 +141,29 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                       fontWeight: FontWeight.bold,
                     ),
                   )
-
                 ],
-              )
-          ),
+              )),
           GestureDetector(
             onTap: () {
               if (totalCost > 0) {
-                Future.delayed(  Duration(seconds: REFRESHDELAY), () {
-                  bool isFreeShipment=(couponSelection==CouponSelection.Accepted && _coupon!=null && _coupon.free_shipping);
-                  if(prefs.getBool(ISLOGIN) ?? false) {
-                    Navigator.pushNamed(context, '/checkOutTab', arguments: {'_amount': totalCost,'_freeShipment': isFreeShipment});
+                Future.delayed(Duration(seconds: REFRESHDELAY), () {
+                  bool isFreeShipment =
+                      (couponSelection == CouponSelection.Accepted &&
+                          _coupon != null &&
+                          _coupon.free_shipping);
+                  if (prefs.getBool(ISLOGIN) ?? false) {
+                    Navigator.pushNamed(context, '/checkOutTab', arguments: {
+                      '_amount': totalCost,
+                      '_freeShipment': isFreeShipment
+                    });
                   } else
-                    Navigator.pushNamed(context, '/login', arguments: {'_amount': totalCost,'_freeShipment': isFreeShipment,'_nextToGo': "/checkOutTab"});
-
+                    Navigator.pushNamed(context, '/login', arguments: {
+                      '_amount': totalCost,
+                      '_freeShipment': isFreeShipment,
+                      '_nextToGo': "/checkOutTab"
+                    });
                 });
-              }
-              else
+              } else
                 ToastUtils.showCustomToast(context, "Cart must not be empty");
             },
             child: Center(
@@ -160,17 +176,16 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                       fontFamily: "Header",
                       color: themeTextColor,
                       fontSize: 24,
-                      fontWeight: FontWeight.bold
-                  ),
+                      fontWeight: FontWeight.bold),
                 ),
               ),
             ),
           )
-
         ],
       ),
     );
   }
+
   Widget getCoupon() {
     if (couponSelection == CouponSelection.TextField)
       return Flex(
@@ -194,41 +209,44 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
               flex: 2,
               child: GestureDetector(
                 onTap: () {
-                  _coupon = coupons.firstWhere((element) => element.code
-                      .toLowerCase() == couponController.text.toLowerCase(),
+                  _coupon = coupons.firstWhere(
+                      (element) =>
+                          element.code.toLowerCase() ==
+                          couponController.text.toLowerCase(),
                       orElse: () => null);
                   if (_coupon != null) {
-                    bool couponAppicableOnProducts = getIsCouponValidInAllProducts(
-                        _coupon);
-                    bool couponAppicableOnCategories = getIsCouponValidInAllCategories(
-                        _coupon);
-
+                    bool couponAppicableOnProducts =
+                        getIsCouponValidInAllProducts(_coupon);
+                    bool couponAppicableOnCategories =
+                        getIsCouponValidInAllCategories(_coupon);
 
                     double minimum_amount = double.parse(
                         _coupon.minimum_amount != null &&
-                            _coupon.minimum_amount != "" ? _coupon
-                            .minimum_amount : "0.0");
+                                _coupon.minimum_amount != ""
+                            ? _coupon.minimum_amount
+                            : "0.0");
                     double maximum_amount = double.parse(
                         _coupon.maximum_amount != null &&
-                            _coupon.maximum_amount != "" ? _coupon
-                            .maximum_amount : "0.0");
+                                _coupon.maximum_amount != ""
+                            ? _coupon.maximum_amount
+                            : "0.0");
                     bool inAmountInCouponRange = totalCost > minimum_amount &&
                         totalCost < maximum_amount;
                     bool isDateNotPassed = DateTime.now().isBefore(
                         DateTime.parse(_coupon.date_expires).toLocal());
-                    bool isUsageInLimit = _coupon.usage_count <
-                        _coupon.usage_limit;
-
+                    bool isUsageInLimit =
+                        _coupon.usage_count < _coupon.usage_limit;
 
                     print("");
-                    if (isDateNotPassed && isUsageInLimit &&
-                        inAmountInCouponRange && (couponAppicableOnProducts ||
-                        couponAppicableOnCategories)) {
+                    if (isDateNotPassed &&
+                        isUsageInLimit &&
+                        inAmountInCouponRange &&
+                        (couponAppicableOnProducts ||
+                            couponAppicableOnCategories)) {
                       couponSelection = CouponSelection.Accepted;
                       print("");
                     }
-                  }
-                  else {
+                  } else {
                     couponSelection = CouponSelection.ErrorMessage;
                   }
                   setState(() {});
@@ -246,10 +264,7 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                     ),
                   ),
                 ),
-              )
-          )
-
-
+              ))
         ],
       );
     if (couponSelection == CouponSelection.ErrorMessage)
@@ -277,7 +292,8 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                     couponSelection = CouponSelection.TextField;
                     setState(() {});
                   },
-                  child: Text(LocalLanguageString().reentercoupon,
+                  child: Text(
+                    LocalLanguageString().reentercoupon,
                     textAlign: TextAlign.end,
                     style: TextStyle(
                       fontFamily: "Header",
@@ -286,8 +302,7 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                       color: themeTextColor,
                     ),
                   ),
-                )
-            )
+                ))
           ],
         ),
       );
@@ -296,39 +311,37 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
           margin: EdgeInsets.all(7),
           child: Text(
             LocalLanguageString().couponapplied,
-
             style: TextStyle(
               fontFamily: "Header",
               fontWeight: FontWeight.bold,
               fontSize: 17,
               color: themeTextColor,
             ),
-          )
-      );
+          ));
     else
       return Container();
   }
 
   Future<String> getTotalPrice() async {
-    totalCost=0.0;
-      cartList=getCartProductsPref();
-      //GetAllProducts getallproduct= getProductFromId(cartList[1].product_id);
-      cartList.forEach((element) async {
-        if(getProductFromId(element.product_id)!=null) {
-          double price;
-          try {
-            price= double.parse( getProductFromId(element.product_id).price);
-          } on Exception catch (e) {
-            price =0.0;
-          }
-
-          totalCost+=price*element.quantity;
+    totalCost = 0.0;
+    cartList = getCartProductsPref();
+    //GetAllProducts getallproduct= getProductFromId(cartList[1].product_id);
+    cartList.forEach((element) async {
+      if (getProductFromId(element.product_id) != null) {
+        double price;
+        try {
+          price = double.parse(getProductFromId(element.product_id).price);
+        } on Exception catch (e) {
+          price = 0.0;
         }
+
+        totalCost += price * element.quantity;
+      }
     });
-      if(totalCost==0){
-      checkOutHeight=0;
-    }else
-      checkOutHeight=100;
+    if (totalCost == 0) {
+      checkOutHeight = 0;
+    } else
+      checkOutHeight = 100;
   }
 
   Widget specialWCFMHeader() {
@@ -338,31 +351,28 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
       alignment: Alignment.centerLeft,
       height: 150.0,
       child: FadeAnimatedTextKit(
-          onTap: () {
-          },
-          text: [
-            "WooFlux !",
-            "Weekly tag sales",
-            "Dokan & WCFM"
-          ],
+          onTap: () {},
+          text: ["WooFlux !", "Weekly tag sales", "Dokan & WCFM"],
           textStyle: TextStyle(
-              color: themeBG,
-              fontSize: 22.0,
-              fontWeight: FontWeight.bold
-          ),
+              color: themeBG, fontSize: 22.0, fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
           alignment: AlignmentDirectional.topStart // or Alignment.topLeft
-      ),
+          ),
     );
   }
+
   Widget getPopularProductUI() {
     return Container(
-      child:  Column(
+      child: Column(
         children: [
-          getSearchBarUI(),
+         // getSearchBarUI(),
           Container(
-            padding:  EdgeInsets.all( 8.0,),
-            margin:  EdgeInsets.only(top: 13.0,),
+            padding: EdgeInsets.all(
+              8.0,
+            ),
+            margin: EdgeInsets.only(
+              top: 13.0,
+            ),
             alignment: Alignment.centerLeft,
             child: Text(
               LocalLanguageString().popularproducts,
@@ -376,49 +386,53 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
               ),
             ),
           ),
-          Expanded(
-            child: Container(
-                child: ( prefs.getBool(ISGRID) ?? false)?
-                StreamBuilder(
-                  stream: homeBloc.getProductStreamController.stream,
-                  initialData: products,
-                  builder: (BuildContext context, AsyncSnapshot snapshot) {
-                    return snapshot.data!=null?Container(
-                      child: HomeProductGridView(
-                        fromMainPage: true,
-                        products: snapshot.data,
-                        callBack: (String productId) {
-                          Navigator.pushNamed(context, '/homeproductdetail', arguments: {'_productId': productId});
-                        },
-                      ),
-                    ):Container();
-                  },
-                ):
-                StreamBuilder(
-                  stream: homeBloc.getProductStreamController.stream,
-                  initialData: products,
-                  builder: (BuildContext context, AsyncSnapshot snapshot) {
-                    return snapshot.data!=null?HomeProductListView(
-                      fromMainPage: true,
-                      products: snapshot.data,
-                      callBack: (String productId) {
-                        Navigator.pushNamed(context, '/homeproductdetail', arguments: {'_productId': productId});
-                      },
-                    ):Container();
-                  },
-                ),
-            ),
+          Container(
+            child: (prefs.getBool(ISGRID) ?? false)
+                ? StreamBuilder(
+                    stream: homeBloc.getProductStreamController.stream,
+                    initialData: products,
+                    builder: (BuildContext context, AsyncSnapshot snapshot) {
+                      return snapshot.data != null
+                          ? Container(
+                              child: HomeProductGridView(
+                                fromMainPage: true,
+                                products: snapshot.data,
+                                callBack: (String productId) {
+                                  Navigator.pushNamed(
+                                      context, '/homeproductdetail',
+                                      arguments: {'_productId': productId});
+                                },
+                              ),
+                            )
+                          : Container();
+                    },
+                  )
+                : StreamBuilder(
+                    stream: homeBloc.getProductStreamController.stream,
+                    initialData: products,
+                    builder: (BuildContext context, AsyncSnapshot snapshot) {
+                      return snapshot.data != null
+                          ? Container(
+                            child: HomeProductListView(
+                                fromMainPage: true,
+                                products: snapshot.data,
+                                callBack: (String productId) {
+                                  Navigator.pushNamed(
+                                      context, '/homeproductdetail',
+                                      arguments: {'_productId': productId});
+                                },
+                              ),
+                          )
+                          : Container();
+                    },
+                  ),
           ),
-
         ],
       ),
     );
-
   }
 
-
   Widget getSearchBarUI() {
-
     return Padding(
       padding: const EdgeInsets.only(top: 0, left: 18),
       child: Row(
@@ -437,8 +451,7 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                       child: Icon(
                         Icons.search,
                         color: themeTextColor,
-                      )
-                  ),
+                      )),
                   Expanded(
                     child: Container(
                       padding: const EdgeInsets.only(left: 15, right: 15),
@@ -467,20 +480,20 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                           ),
                         ),
                         onChanged: (value) {
-                          List<GetAllProducts> _products=new List();
+                          List<GetAllProducts> _products = new List();
 
-                          products.forEach((data){
-                            if (data.title.toLowerCase().contains(value.toLowerCase())){
+                          products.forEach((data) {
+                            if (data.title
+                                .toLowerCase()
+                                .contains(value.toLowerCase())) {
                               _products.add(data);
                             }
                           });
                           homeBloc.refreshProducts(_products);
-
                         },
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
@@ -488,22 +501,25 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
           Expanded(
             flex: 1,
             child: Container(
-              child:  IconButton(
+              child: IconButton(
                 icon: Icon(
                   Icons.list,
                   color: themeTextColor,
                 ),
                 onPressed: () {
-                  prefs.setBool(ISGRID,!( prefs.getBool(ISGRID) ?? false)).then((isDone){
+                  prefs
+                      .setBool(ISGRID, !(prefs.getBool(ISGRID) ?? false))
+                      .then((isDone) {
                     setState(() {});
                   });
                 },
               ),
             ),
-          ),Expanded(
+          ),
+          Expanded(
             flex: 1,
-            child:Center(
-              child:  IconButton(
+            child: Center(
+              child: IconButton(
                 icon: Icon(
                   Icons.filter_list,
                   color: themeTextColor,
@@ -513,8 +529,8 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
                     backgroundColor: themeBG,
                     context: context,
                     builder: (sheetContext) => BottomSheet(
-                      builder: (_) => Filters( ),
-                      onClosing: (){},
+                      builder: (_) => Filters(),
+                      onClosing: () {},
                     ),
                   );
                 },
@@ -525,6 +541,4 @@ class _ProductScreenState extends State<ProductScreen> with TickerProviderStateM
       ),
     );
   }
-
-
 }

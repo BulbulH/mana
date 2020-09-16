@@ -57,7 +57,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
   @override
   Widget build(BuildContext context) {
     wishList = getWhishlistPref();
-    return GridView.builder(
+    return GridView(
       shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 1,
@@ -69,7 +69,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
       physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.vertical,
 
-      itemCount: widget.products.length,
+/*      itemCount: widget.products.length,
 
         itemBuilder: (BuildContext ctxt, int index) {
           print(index);
@@ -84,9 +84,9 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                   widget.products[index],
                 )),
           );
-        }
+        }*/
 
-      /*children: List<Widget>.generate(
+      children: List<Widget>.generate(
         widget.products.length,
         (int index) {
           print(index);
@@ -102,7 +102,7 @@ class _PopularProductGridViewState extends State<HomeProductListView>
                 )),
           );
         },
-      ),*/
+      ),
     );
   }
 

@@ -37,7 +37,8 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
   @override
   Widget build(BuildContext context) {
     wishList=getWhishlistPref();
-    return  GridView.builder(
+    return  GridView(
+
       shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
@@ -48,7 +49,7 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
       padding: const EdgeInsets.all(8),
       physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.vertical,
-      itemCount: widget.products.length,
+/*      itemCount: widget.products.length,
         itemBuilder: (BuildContext ctxt, int index) {
           print(index);
         return Container(
@@ -62,8 +63,8 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
             child: itemView(widget.products[index],),
           ),
         );
-        }
-      /*children: List<Widget>.generate(
+        }*/
+      children: List<Widget>.generate(
         widget.products.length,
             (int index) {
               print(index);
@@ -79,7 +80,7 @@ class _PopularProductGridViewState extends State<HomeProductGridView> with Ticke
             ),
           );
         },
-      ),*/
+      ),
     );
   }
   Widget itemView(GetAllProducts data) {
