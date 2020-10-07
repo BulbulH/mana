@@ -21,6 +21,12 @@
       <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/card directory/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/card directory/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/card directory/build" />
+      <excludeFolder url="file://$MODULE_DIR$/image_video_compressore/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/image_video_compressore/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/image_video_compressore/build" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_facebook_login/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_facebook_login/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_facebook_login/build" />

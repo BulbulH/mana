@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MD Bulbul Hossain\\Desktop\\code wooflux\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rES\\values-es-rES.xml",
+            "outputFile": "E:\\My Flutter project\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rES\\values-es-rES.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MD Bulbul Hossain\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-facebook-login-5.5.1.aar\\0f085a6e69a9f24717763c08c00a2f1c\\res\\values-es-rES\\values-es-rES.xml",
+                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-facebook-login-5.5.1.aar\\4603d1ad0886e3fb35ae03ac90421ce7\\res\\values-es-rES\\values-es-rES.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
