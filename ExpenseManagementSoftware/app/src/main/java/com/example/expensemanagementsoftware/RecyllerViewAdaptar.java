@@ -36,6 +36,7 @@ public class RecyllerViewAdaptar extends RecyclerView.Adapter<RecyllerViewAdapta
         holder.myTextView.setText(animal);*/
         holder.date.setText(mData.get(position).date);
         holder.money.setText(mData.get(position).money);
+        holder.incomeType.setText(mData.get(position).type);
 
     }
 
@@ -48,12 +49,13 @@ public class RecyllerViewAdaptar extends RecyclerView.Adapter<RecyllerViewAdapta
 
     // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView date, money;
+        TextView date, money, incomeType;
 
         ViewHolder(View itemView) {
             super(itemView);
             date = itemView.findViewById(R.id.dateID);
             money = itemView.findViewById(R.id.costID);
+            incomeType = itemView.findViewById(R.id.incomeType);
             itemView.setOnClickListener(this);
         }
 
