@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
+import 'package:image_video_compressore/screens/imageCompressorPicker.dart';
+import 'package:image_video_compressore/screens/videoCompressor.dart';
 import 'package:image_video_compressore/utilits/CommonFunctions.dart';
 import 'package:image_video_compressore/utilits/const.dart';
 import 'package:image_video_compressore/widgets/menuWidget.dart';
@@ -15,6 +17,11 @@ class _homeScreenState extends State<homeScreen> {
   GlobalKey<SliderMenuContainerState> _key =
       new GlobalKey<SliderMenuContainerState>();
   String title = "home";
+  @override
+  void initState() {
+    BodyWidgets= ImageCompressorPicker();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,9 +44,13 @@ class _homeScreenState extends State<homeScreen> {
             print(id);
 
             if(id=="image"){
-
+              setState(() {
+                BodyWidgets=ImageCompressorPicker();
+              });
             }if(id=="video"){
-
+              setState(() {
+                BodyWidgets=VideoCompressor();
+              });
             }if(id=="donate"){
 
             }if(id=="term"){
@@ -56,7 +67,7 @@ class _homeScreenState extends State<homeScreen> {
             }if(id=="about"){
 
             }
-
+            _key.currentState.closeDrawer();
           },
         ),
         sliderMain: Container(
